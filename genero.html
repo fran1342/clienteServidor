@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="container-logo">
+                <img src="./img/libro.svg" alt="logo">
+            </div>
+            <nav>
+                <a href="#"><i class="fas fa-chart-pie"></i></a>
+                <a href="#"><i class="far fa-check-circle"></i></a>
+                <a href="#"><i class="far fa-calendar"></i></a>
+                <a href="#"><i class="far fa-clipboard"></i></a>
+                <a href="#"><i class="fas fa-user-friends"></i></a>
+            </nav>
+            <nav class="user">
+                <a href="#"><i class="fas fa-wave-square"></i></a>
+                <a href="#"><i class="fas fa-inbox"></i></a>
+                <div class="user-img">
+                    <img src="./img/avatar6.jpg" alt="user">
+                </div>
+            </nav>
+        </header>
+        <section class="container-table">
+            <div class="table-encabezado">
+                <h2>All Genders</h2>
+                <div class="container-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search gender...">
+                </div>
+                <button id="loadGenders"><i class="fas fa-plus"></i></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre genero</th>
+                        <th>Descripcion genero</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td><div>Name gender 1</div></td>
+                        <td><div>Descripcion gender 1</div></td>
+                        <td>
+                            <div class="actions">
+                                <button><i class="far fa-edit"></i></button>
+                                <button><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="container-form">
+            <h2>Gender</h2>
+            <div class="form">
+                <form>
+                    <div>
+                        <label for="">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label for="">Descripcion</label>
+                        <input type="text" id="desc">
+                    </div>
+                    <div>
+                        <label for="">Genero actualizar(Solo en actualizar)</label>
+                        <input type="text" id="act">
+                    </div>
+                </form>
+                <button id="genderSave">Save</button>
+                <button id="genderUpdate">Update</button>
+                <form>
+                    <div>
+                        <label for="">Elimiar genero</label>
+                        <input type="text" id="eliminar">
+                    </div>
+                </form>
+                <button id="genderDelete">Delete</button>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./js/genero.js"></script>
+</html>
